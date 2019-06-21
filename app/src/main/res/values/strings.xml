@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tourist Nepal App</string>
+   <string name="tile_1">Directions</string>
 </resources>
