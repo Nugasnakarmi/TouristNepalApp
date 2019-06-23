@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Tourist Nepal App</string>
-   <string name="tile_1">Directions</string>
+    <string name="tile_1">Directions</string>
+    <string name="card_1">historyCard</string>
+    <string name="card_2">guideCard</string>
+    <string name="card_3">contactsCard</string>
+    <string name="card_4">directionsCard</string>
+    <string name="card_5">Card5</string>
+    <string name="card_6">Card6</string>
 </resources>
