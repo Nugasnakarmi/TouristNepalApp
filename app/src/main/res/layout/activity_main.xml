@@ -1,196 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBgGrid"
+    android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:background="@color/colorPrimary"
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@android:dimen/app_icon_size"
-        >
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
 
         <TextView
             android:id="@+id/textGrid"
-            android:text="@string/app_name"
-
-            android:textSize="34sp"
-            android:textColor="@android:color/white"
-            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/white"
+            android:textSize="34sp" />
 
 
-        </RelativeLayout>
+    </RelativeLayout>
 
     <GridLayout
         android:id="@+id/main_grid"
-        android:columnCount="2"
-        android:rowCount="3"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:layout_weight="8"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
         android:padding="14dp"
-        >
-<!--from api 21 columnWeight and rowWeight-->
+        android:rowCount="3">
+        <!--from api 21 columnWeight and rowWeight-->
         <android.support.v7.widget.CardView
             android:id="@+id/historyCard"
             android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
+            android:layout_height="0dp"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
 
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
 
-            app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:orientation="vertical">
+
                 <ImageView
 
-                    android:src="@drawable/bhaktapur_durbarsquare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
                 <TextView
 
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/directionCard"
             android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
+            android:layout_height="0dp"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
             app:cardCornerRadius="8dp"
-        >
+            app:cardElevation="8dp">
+
             <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                <ImageView
-                android:contentDescription="@string/tile_1"
-                android:src="@drawable/bhaktapur_durbarsquare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
-                <TextView
-
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
-
-                        </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/guideCard"
-            android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            >
-            <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                <ImageView
+                android:orientation="vertical">
 
-                    android:src="@drawable/bhaktapur_durbarsquare"
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:contentDescription="@string/tile_1"
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
                 <TextView
 
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/guideCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/contactsCard"
             android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
+            android:layout_height="0dp"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:orientation="vertical">
+
                 <ImageView
 
-                    android:src="@drawable/bhaktapur_durbarsquare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
                 <TextView
 
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -199,78 +215,88 @@
         <android.support.v7.widget.CardView
             android:id="@+id/Card5"
             android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
+            android:layout_height="0dp"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:orientation="vertical">
+
                 <ImageView
 
-                    android:src="@drawable/bhaktapur_durbarsquare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
                 <TextView
 
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.CardView
             android:id="@+id/Card6"
             android:layout_width="0dp"
-            android:layout_height ="0dp"
-            android:layout_columnWeight="1"
+            android:layout_height="0dp"
             android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
+            android:layout_columnWeight="1"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_marginBottom="16dp"
+
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
+
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:orientation="vertical">
+
                 <ImageView
 
-                    android:src="@drawable/bhaktapur_durbarsquare"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    />
+                    android:src="@drawable/bhaktapur_durbarsquare" />
+
                 <TextView
 
-                    android:text ="@string/tile_1"
-                    android:textColor="@android:color/white"
-                    android:textAlignment="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" />
+                    android:text="@string/tile_1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-
 
 
     </GridLayout>
