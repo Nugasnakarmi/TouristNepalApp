@@ -7,4 +7,7 @@
     <string name="card_4">directionsCard</string>
     <string name="card_5">Card5</string>
     <string name="card_6">Card6</string>
+    <string name="logo_desc">Two People Shaking Hands</string>
+    <string name="app_desc">Helping Tourists In Need</string>
+    <string name="map_desc">Outline Map of Nepal</string>
 </resources>
