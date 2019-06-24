@@ -11,7 +11,7 @@ public class splashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        Thread mythread = new Thread(){
+        Thread splashThread = new Thread(){
             @Override
             public void run() {
                 try {
@@ -24,6 +24,6 @@ public class splashScreen extends AppCompatActivity {
                 }
             }
         };
-        mythread.start();
+        splashThread.start();
     }
 }
