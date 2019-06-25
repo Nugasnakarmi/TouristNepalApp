@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "344183699579",
+    "firebase_url": "https://touristapp-2e329.firebaseio.com",
+    "project_id": "touristapp-2e329",
+    "storage_bucket": "touristapp-2e329.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344183699579:android:b46de4c3a067aad0",
+        "android_client_info": {
+          "package_name": "s.to.touristnepalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344183699579-kgh71i6t75u8ksf19uc42t99dfl4udld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt2-mEFW_S3nU5dtjbeuXm5e6lEKG2GWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344183699579-kgh71i6t75u8ksf19uc42t99dfl4udld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
