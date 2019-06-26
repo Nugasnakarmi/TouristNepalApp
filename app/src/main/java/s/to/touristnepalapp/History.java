@@ -33,7 +33,7 @@ public class History extends AppCompatActivity {
         List<Data> data = new ArrayList<>();
 
         data.add(new Data("Pashupatinath", "Birthplace of Shiva", R.drawable.pashupatinath));
-        data.add(new Data("Shwoyambhunath", "Buddha's Wisdom Place", R.drawable.swayambhunath));
+        data.add(new Data("Swayambhunath", "Buddha's Wisdom Place", R.drawable.swayambhunath));
         data.add(new Data("Baghbhairab", "Where the Tiger Bhairav resides", R.drawable.bagh_bhairav));
         data.add(new Data("Lumbini", "Where Buddha was born", R.drawable.lumbini));
         data.add(new Data("Janakpur", "Janaki was born here", R.drawable.janaki_temple));

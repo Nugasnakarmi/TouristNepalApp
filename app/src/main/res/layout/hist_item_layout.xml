@@ -4,13 +4,13 @@
     android:id="@+id/historicalCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="4dp"
     android:layout_marginBottom="10sp"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="10sp"
-    app:cardElevation="6dp"
-    android:layout_margin="4dp">
+    app:cardElevation="6dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,8 +20,8 @@
 
         <ImageView
             android:id="@+id/imgIcon"
-            android:layout_width="153dp"
-            android:layout_height="153dp"
+            android:layout_width="139dp"
+            android:layout_height="136dp"
             android:src="@drawable/pashupatinath" />
 
         <TextView
@@ -37,7 +37,8 @@
             android:paddingLeft="16dp"
             android:text="@string/app_name"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/placeDesc"
