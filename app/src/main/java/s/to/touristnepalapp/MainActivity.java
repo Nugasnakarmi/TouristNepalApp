@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.GridView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView historyCard, guideCard, contactsCard, directionCard, Card5, Card6;
+    private CardView historyCard, guideCard, contactsCard, funCard, cultureCard, travelCard;
     private GridView mainGrid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,17 +24,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         guideCard =  findViewById(R.id.guideCard);
         guideCard.setBackgroundTintMode(PorterDuff.Mode.OVERLAY);
         contactsCard =  findViewById(R.id.contactsCard);
-        directionCard =  findViewById(R.id.directionCard);
-        Card5 =  findViewById(R.id.Card5);
-        Card6 =  findViewById(R.id.Card6);
+        funCard =  findViewById(R.id.funCard);
+        cultureCard =  findViewById(R.id.cultureCard);
+        travelCard =  findViewById(R.id.travelCard);
 
         //Add click listener
         historyCard.setOnClickListener(this);
         guideCard.setOnClickListener(this);
         contactsCard.setOnClickListener(this);
-        directionCard.setOnClickListener(this);
-        Card5.setOnClickListener(this);
-        Card6.setOnClickListener(this);
+        funCard.setOnClickListener(this);
+        cultureCard.setOnClickListener(this);
+        travelCard.setOnClickListener(this);
 
     }
 
@@ -59,18 +59,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
 
-            case R.id.directionCard:
-                i = new Intent(this, Directions.class);
+            case R.id.funCard:
+                i = new Intent(this, Fun.class);
                 startActivity(i);
                 break;
 
-            case R.id.Card5:
-                i = new Intent(this, Card5.class);
+            case R.id.cultureCard:
+                i = new Intent(this, Culture.class);
                 startActivity(i);
                 break;
 
-            case R.id.Card6:
-                i = new Intent(this, Card6.class);
+            case R.id.travelCard:
+                i = new Intent(this, Travel.class);
                 startActivity(i);
                 break;
 

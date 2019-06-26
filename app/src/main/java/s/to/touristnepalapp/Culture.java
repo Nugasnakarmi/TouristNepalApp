@@ -1,13 +1,13 @@
-    package s.to.touristnepalapp;
+package s.to.touristnepalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Card6 extends AppCompatActivity {
+public class Culture extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card6);
+        setContentView(R.layout.activity_culture);
     }
 }

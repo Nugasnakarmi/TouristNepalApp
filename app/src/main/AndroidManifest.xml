@@ -14,9 +14,9 @@
        >
 
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Card6" />
-        <activity android:name=".Card5" />
-        <activity android:name=".Directions" />
+        <activity android:name=".Travel" />
+        <activity android:name=".Culture" />
+        <activity android:name=".Fun" />
         <activity android:name=".Contacts" />
         <activity android:name=".Guide" />
         <activity android:name=".History" />

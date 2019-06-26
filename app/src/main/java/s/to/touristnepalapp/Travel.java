@@ -1,13 +1,13 @@
-package s.to.touristnepalapp;
+    package s.to.touristnepalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Directions extends AppCompatActivity {
+public class Travel extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_directions);
+        setContentView(R.layout.activity_travel);
     }
 }
