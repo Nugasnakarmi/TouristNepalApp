@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/historicalCardView"
     android:focusable="true"
+    android:clickable="true"
     android:layout_marginBottom="10sp"
     android:foreground="?android:attr/selectableItemBackground">
 
