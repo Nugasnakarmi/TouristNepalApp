@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historicalCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/historicalCardView"
-    android:focusable="true"
-    android:clickable="true"
     android:layout_marginBottom="10sp"
-    android:foreground="?android:attr/selectableItemBackground">
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10sp"
+    app:cardElevation="6dp"
+    android:layout_margin="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:elevation="@dimen/cardview_default_elevation"
-        android:padding="8dp">
+        android:padding="12dp">
 
         <ImageView
             android:id="@+id/imgIcon"
-            android:layout_width="160dp"
-            android:layout_height="166dp"
+            android:layout_width="153dp"
+            android:layout_height="153dp"
             android:src="@drawable/pashupatinath" />
 
         <TextView

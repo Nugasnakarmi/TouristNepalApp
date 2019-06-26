@@ -1,24 +1,32 @@
 package s.to.touristnepalapp;
 
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import androidx.cardview.widget.CardView;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.PorterDuff;
+import android.os.Bundle;
+
+import androidx.cardview.widget.CardView;
+
+import android.view.View;
+import android.widget.GridView;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private CardView historyCard, guideCard, contactsCard, directionCard, Card5, Card6;
+    private GridView mainGrid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //defining the 6 cards
-        historyCard = (CardView) findViewById(R.id.historyCard);
-        guideCard= (CardView) findViewById(R.id.guideCard);
-        contactsCard =(CardView) findViewById(R.id.contactsCard);
-        directionCard = (CardView) findViewById(R.id.directionCard);
-        Card5=(CardView) findViewById(R.id.Card5);
-        Card6=(CardView) findViewById(R.id.Card6);
+        historyCard =  findViewById(R.id.historyCard);
+        guideCard =  findViewById(R.id.guideCard);
+        guideCard.setBackgroundTintMode(PorterDuff.Mode.OVERLAY);
+        contactsCard =  findViewById(R.id.contactsCard);
+        directionCard =  findViewById(R.id.directionCard);
+        Card5 =  findViewById(R.id.Card5);
+        Card6 =  findViewById(R.id.Card6);
 
         //Add click listener
         historyCard.setOnClickListener(this);
@@ -57,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.Card5:
-                i = new Intent(this,   Card5.class);
+                i = new Intent(this, Card5.class);
                 startActivity(i);
                 break;
 
@@ -66,7 +74,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
 
-            default: break;
+            default:
+                break;
         }
 
     }
