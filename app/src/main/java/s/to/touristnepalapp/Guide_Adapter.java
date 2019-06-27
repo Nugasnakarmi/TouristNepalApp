@@ -13,11 +13,11 @@ import com.makeramen.roundedimageview.RoundedImageView;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
+public class Guide_Adapter extends RecyclerView.Adapter<Guide_Adapter.ViewHolder>{
     private Context mContext;
     private List<GuideList> guideList;
 
-    public Adapter(Context mContext, List<GuideList> guideList) {
+    public Guide_Adapter(Context mContext, List<GuideList> guideList) {
         this.mContext = mContext;
         this.guideList = guideList;
     }
@@ -36,6 +36,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
         GuideList guide = guideList.get(position);
 
         holder.textViewName.setText( guide.getName() );
+        holder.textViewLang.setText( guide.getLanguage() );
+        holder.textViewMobile.setText( guide.getMobile() );
+        holder.textViewEmail.setText( guide.getEmail() );
         holder.roundedImageView.setImageDrawable( mContext.getResources().getDrawable( guide.getImage() ,null));
     }
 
@@ -46,12 +49,17 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         RoundedImageView roundedImageView;
-        TextView textViewName;
+        TextView textViewName ,textViewLang, textViewMobile, textViewEmail;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             roundedImageView= itemView.findViewById( R.id.rimageViewguide);
             textViewName = itemView.findViewById( R.id.textguide);
+            textViewLang = itemView.findViewById( R.id.guide_langPref);
+            textViewMobile = itemView.findViewById( R.id.guide_mobile);
+            textViewEmail = itemView.findViewById( R.id.guide_email);
+
         }
     }
 }

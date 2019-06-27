@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Guide extends AppCompatActivity {
     RecyclerView recyclerViewGuide;
-    Adapter adapterGuide;
+    Guide_Adapter adapterGuide;
 
     List<GuideList> guideList;
     @Override
@@ -29,44 +29,61 @@ public class Guide extends AppCompatActivity {
         guideList.add(
                 new GuideList(
 
-                        "Ravi Tamang",
-                        R.drawable.basantapursquare
+                        "Achyut Hari Rijal",
+                        "English/Japanese",
+                        "98510-71493",
+                        "achyut_rijal@hotmail.com",
+                        R.drawable.achut_hari
+
                 )
         );
         guideList.add(
                 new GuideList(
 
-                        "Sagun Nakarmi",
-                        R.drawable.suspensionbridge
-                )
-        );
-
-        guideList.add(
-                new GuideList(
-
-                        "Purak Adhikari",
-                        R.drawable.bhakta_golden_gate
-                )
-        );
-
-        guideList.add(
-                new GuideList(
-
-                        "Gaurav Subedi",
-                        R.drawable.prayer_wheels
+                        "Achyut Sigdel",
+                        "Chinese/English",
+                        "985113732",
+                        "achyutsigdel@hotmail.com",
+                        R.drawable.achyut_sigdel
                 )
         );
 
         guideList.add(
                 new GuideList(
 
-                        "Sagar Nakarmi",
-                        R.drawable.mountains
+                        "Adwait Man Pradhan",
+                        "English/German",
+                        " 4411333",
+                        " ad_pradhan@gmail.com",
+                        R.drawable.adwait
+                )
+        );
+
+        guideList.add(
+                new GuideList(
+
+                        "Ajay K. Dahal",
+                        "English/German",
+                        " 9851045599",
+                        " ajayktm@gmail.com",
+                        R.drawable.ajay
+                )
+        );
+
+        guideList.add(
+                new GuideList(
+
+                        "Amar Lamjel",
+                        "Chinese/English",
+                        " 9851241579,9841358488",
+
+                        " amarsaathi@hotmail.com",
+                        R.drawable.amal_lumjel
                 )
         );
 
 
-        adapterGuide = new Adapter(this, guideList);
+        adapterGuide = new Guide_Adapter(this, guideList);
         recyclerViewGuide.setAdapter( adapterGuide );
     }
 }
